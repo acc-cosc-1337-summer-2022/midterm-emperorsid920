@@ -5,4 +5,4 @@ bool test_config()
     return true;
 }
 
-double get_fahrenheit(double c);
+
