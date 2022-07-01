@@ -1,14 +1,21 @@
 #include <iostream>
 #include <iomanip>
-#include ""
+#include "question1.h"
 using namespace std;
 int main()
 {
+ 
+ 
+ 
+  int Celcius;
  
     do {
              
           
             
+             
+            Cout<<"Please enter the temperature in Celcius: ";
+            cin>>Celcius;
             
 
             
