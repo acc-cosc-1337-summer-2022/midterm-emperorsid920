@@ -1,4 +1,7 @@
-bool test_config();
+#include "question2.h"
+
+#ifndef question_h
+#define question_h
 
 class Reciept {       // The class
    private:
@@ -8,9 +11,14 @@ class Reciept {       // The class
     double Price;
   
   public:             // Access specifier
-    Reciept(double, double); 
-    double calculate_tax(double);
-    double  calculate_gratuity(double);
+    Reciept(double, double);
+    double calculate_tax();
+    double  calculate_gratuity();
     void display_receipt(double);
   
 };
+
+
+
+
+#endif /* Reciept_h */
