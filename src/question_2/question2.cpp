@@ -24,3 +24,5 @@ double Reciept::calculate_gratuity(){
     double gratAmount = Price * Gratuity;
     return gratAmount;
 }
+
+//void Reciept::void display_receipt(double)
