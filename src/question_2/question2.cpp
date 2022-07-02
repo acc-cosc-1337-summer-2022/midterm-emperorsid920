@@ -10,3 +10,17 @@ Reciept::Reciept(double meal_price, double, tip_rate){
     Price = meal_price;
     Gratuity = tip_rate;
 }
+
+double Reciept::calculate_tax(){
+    
+    double taxAmount = Price * Tax;
+    
+    return taxAmount;
+    
+}
+
+double Reciept::calculate_gratuity(){
+    
+    double gratAmount = Price * Gratuity;
+    return gratAmount
+}
