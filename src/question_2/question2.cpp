@@ -7,5 +7,6 @@ bool test_config()
 
 
 Reciept::Reciept(double meal_price, double, tip_rate){
-    
+    Price = meal_price;
+    Gratuity = tip_rate;
 }
