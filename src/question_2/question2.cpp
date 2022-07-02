@@ -1,24 +1,30 @@
+#include <iostream>
+#include <stdio.h>
 #include "question2.h"
 
-#ifndef question_h
-#define question_h
+using namespace std;
 
-class Reciept {       // The class
-   private:
-    // Private attribute
-    double Gratuity;
-    const double Tax = 0.08;
-    double Price;
-  
-  public:             // Access specifier
-    Reciept(double, double);
-    double calculate_tax();
-    double  calculate_gratuity();
-    void display_receipt(double);
-  
-};
+Reciept::Reciept(double meal_price, double tip_rate){
+    
+    Price = meal_price;
+    Gratuity = tip_rate;
+}
 
+double Reciept::calculate_tax(){
+    
+    double taxAmount = Price * Tax;
+        
+    return taxAmount;
+}
 
+double Reciept::calculate_gratuity(){
+    
+    double gratAmount = Price * (Gratuity/100);
+    
+    return gratAmount;
+}
 
-
-#endif /* Reciept_h */
+void Reciept::display_receipt( double Amount){
+    
+    cout<<"Total of Amount is: "<<Amount<<endl;
+}
