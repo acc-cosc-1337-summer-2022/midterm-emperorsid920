@@ -22,5 +22,5 @@ double Reciept::calculate_tax(){
 double Reciept::calculate_gratuity(){
     
     double gratAmount = Price * Gratuity;
-    return gratAmount
+    return gratAmount;
 }
