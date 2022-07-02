@@ -1,28 +1,24 @@
 #include "question2.h"
 
-bool test_config()
-{
-    return true;
-}
+#ifndef question_h
+#define question_h
+
+class Reciept {       // The class
+   private:
+    // Private attribute
+    double Gratuity;
+    const double Tax = 0.08;
+    double Price;
+  
+  public:             // Access specifier
+    Reciept(double, double);
+    double calculate_tax();
+    double  calculate_gratuity();
+    void display_receipt(double);
+  
+};
 
 
-Reciept::Reciept(double meal_price, double, tip_rate){
-    Price = meal_price;
-    Gratuity = tip_rate;
-}
 
-double Reciept::calculate_tax(){
-    
-    double taxAmount = Price * Tax;
-    
-    return taxAmount;
-    
-}
 
-double Reciept::calculate_gratuity(){
-    
-    double gratAmount = Price * Gratuity;
-    return gratAmount;
-}
-
-//void Reciept::void display_receipt(double)
+#endif /* Reciept_h */
