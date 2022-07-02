@@ -4,3 +4,8 @@ bool test_config()
 {
     return true;
 }
+
+
+Reciept::Reciept(double meal_price, double, tip_rate){
+    
+}
